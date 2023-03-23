@@ -1,0 +1,12 @@
+.inputNaming {
+    height: 250px;
+    background-color: #ff4655;
+    opacity: 0.7;
+}
+
+.inputText {
+    font-family: 'Tarrget', sans-serif;
+    font-size: 24px;
+    color: white;
+    padding: 24px;
+}

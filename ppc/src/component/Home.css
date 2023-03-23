@@ -1,0 +1,12 @@
+.ring {
+    height: 650px;
+    background-image:url("../../public/gifight.gif");
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+}
+
+.namingContainer {
+   padding-top :100px;
+
+}

@@ -1,18 +1,18 @@
 import "./Header.css"
 
-export function Header ()  {
+export function Header (props)  {
   
     return (
         <div className="header">
             <div className="container">
                 <div className="headerText">
-                    Utilisateur
+                    {props.name}
                 </div>
                 <div className="headerTitle"> 
                    Shifumi
                 </div>
                 <div className="headerText">
-                    Score N/A
+                     {"Score " + props.score.player + " / " + props.score.ai }
                 </div>
             
             </div>

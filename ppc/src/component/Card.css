@@ -1,0 +1,7 @@
+.deckCard {
+    cursor:pointer;
+    opacity: 0.7
+}
+.deckCard:hover {
+    opacity:1
+}

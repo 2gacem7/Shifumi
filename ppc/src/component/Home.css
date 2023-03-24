@@ -1,12 +1,61 @@
 .ring {
     height: 650px;
     background-image:url("../../public/gifight.gif");
-    background-repeat: no-repeat;
+    
     display: flex;
     justify-content: center;
 }
 
 .namingContainer {
    padding-top :100px;
-
 }
+
+.cardcontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;  
+}
+
+.buttonFight {
+    position:absolute;
+    bottom: 150px;
+}
+
+.button {
+    padding:20px;
+    cursor: pointer;
+}
+.button:hover {
+    background:#ff4655;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+  }
+
+  .cardAction {
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  }
+
+  .playing {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+
+  .vstext {
+    font-family: 'Tarrget', sans-serif;
+    font-size: 120px;
+    -webkit-text-stroke: 2px #ff4655;
+  }
+
+  .winner {
+    font-family: 'Tarrget', sans-serif;
+    font-size: 80px;
+  }

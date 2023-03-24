@@ -5,7 +5,7 @@ export function Footer ()  {
     return (
         <div className="footer">
             <div className="container">
-            By 2gacem7 with FIIGHt
+                <div className="footerText">By 2gacem7 with <span> love </span> hate! </div>
             </div>
         </div>
     )

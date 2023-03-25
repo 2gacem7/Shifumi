@@ -23,22 +23,22 @@ export function Home ()  {
         return Math.floor(Math.random() * max)
     }
    
-    function getfight(index) {
+    function chooseCardPlayer(index) {
         setCardSelect(index)
         setAiCardSelect(getRandomInt(3))
-        sound.play();
+        audio.play();
     }
 
     async function startPlaying() {
-            if(cardSelect !== null) {
+            if(cardSelect !== null && aiCardSelect !== null) {
                 setPlaying(true)
                 getScore()
                 setContinueState(true)
+                sound.play();
             } else {
                 alert("Choisis ton champion")
             }
     }
-
 
     function getScore () {
         if(cardSelect !== null && aiCardSelect !== null) {
@@ -69,6 +69,7 @@ export function Home ()  {
 
     function ContinuePlaying() {
         setPlaying(false);
+        setCardSelect(null);
     }
 
     function stopPlaying() {
@@ -146,7 +147,7 @@ export function Home ()  {
                             {gameCard.map((e, index) => {
                                 return (
                                     <div key={index}>
-                                        <button className="cardAction" onClick={() => getfight(index)}>
+                                        <button className="cardAction" onClick={() => chooseCardPlayer(index)}>
                                             <div className="deckCard" style={{opacity: cardSelect === index && 1, marginBottom: cardSelect === index && 60}}>
                                                 <Card img={e.src} alt={e.alt}/>
                                             </div>

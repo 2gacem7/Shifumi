@@ -23,7 +23,7 @@ Start the project
 
     npm run start
 
-## Authors
+## Author
 
   - **Gacem Ben Ayad**
     

@@ -2,7 +2,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import {Card } from './Card';
 import "./Home.css"
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 
 export function Home ()  {
     const name = "Humain";
@@ -19,29 +19,30 @@ export function Home ()  {
     var sound = document.createElement('audio');
     sound.setAttribute('src','fight.mp3');
 
-    function startPlaying() {
-        if(cardSelect !== null) {
-            sound.play();
-            setPlaying(true)
-            setContinueState(true)
-            getScore()
-        } else {
-            alert("Choisis ton champion")
-        }
-    }
-
     function getRandomInt(max) {
         return Math.floor(Math.random() * max)
     }
-
+   
     function getfight(index) {
-        setAiCardSelect(getRandomInt(3))
         setCardSelect(index)
-        audio.play()
+        setAiCardSelect(getRandomInt(3))
+        sound.play();
     }
+
+    async function startPlaying() {
+            if(cardSelect !== null) {
+                setPlaying(true)
+                getScore()
+                setContinueState(true)
+            } else {
+                alert("Choisis ton champion")
+            }
+    }
+
 
     function getScore () {
         if(cardSelect !== null && aiCardSelect !== null) {
+            console.log("ai" + aiCardSelect)
             if(cardSelect === aiCardSelect) {
                 return;
             }

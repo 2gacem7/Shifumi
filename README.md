@@ -24,4 +24,4 @@ Start the project
 
   - **Gacem Ben Ayad**
     
-//<img src="https://cdn-images-1.medium.com/letterbox/147/36/50/50/1*oHHjTjInDOBxIuYHDY2gFA.png?source=logoAvatar-d7276495b101---37816ec27d7a" width="120"/>
+//<img src="Combat.png" width="120"/>

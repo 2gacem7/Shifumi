@@ -22,5 +22,5 @@ Start the project
 
 ## Authors
 
-  - **Gacem Ben Ayad** - 
+  - **Gacem Ben Ayad**
     

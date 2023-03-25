@@ -9,8 +9,7 @@ It's not responsive, the ideal resolution to play is in desktop screen between 1
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development
-environment running
+Enter in the ./ppc folder.
 
 Installation
 

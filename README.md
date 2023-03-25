@@ -24,4 +24,7 @@ Start the project
 
   - **Gacem Ben Ayad**
     
-//<img src="Combat.png" width="120"/>
+<img src="Home.png" width="800"/>
+<img src="Selection.png" width="800"/>
+<img src="Combat.png" width="800"/>
+<img src="Fini.png" width="800"/>

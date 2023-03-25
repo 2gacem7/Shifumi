@@ -20,7 +20,8 @@ export function Home ()  {
     sound.setAttribute('src','fight.mp3');
 
     function startPlaying() {
-        if(cardSelect !== null && aiCardSelect !== null) {
+        if(cardSelect !== null) {
+            setAiCardSelect(getRandomInt(3))
             sound.play();
             setPlaying(true)
             setContinueState(true)
@@ -36,7 +37,6 @@ export function Home ()  {
 
     function getfight(index) {
         setCardSelect(index)
-        setAiCardSelect(getRandomInt(3))
         audio.play()
     }
 

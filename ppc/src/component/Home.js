@@ -21,7 +21,6 @@ export function Home ()  {
 
     function startPlaying() {
         if(cardSelect !== null) {
-            setAiCardSelect(getRandomInt(3))
             sound.play();
             setPlaying(true)
             setContinueState(true)
@@ -36,6 +35,7 @@ export function Home ()  {
     }
 
     function getfight(index) {
+        setAiCardSelect(getRandomInt(3))
         setCardSelect(index)
         audio.play()
     }

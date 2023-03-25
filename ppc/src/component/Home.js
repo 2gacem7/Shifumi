@@ -42,7 +42,6 @@ export function Home ()  {
 
     function getScore () {
         if(cardSelect !== null && aiCardSelect !== null) {
-            console.log("ai" + aiCardSelect)
             if(cardSelect === aiCardSelect) {
                 return;
             }

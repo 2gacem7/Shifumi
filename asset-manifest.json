@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Shifumi/static/css/main.32e09e60.css",
+    "main.js": "/Shifumi/static/js/main.ba3b4729.js",
+    "static/js/787.d03f1123.chunk.js": "/Shifumi/static/js/787.d03f1123.chunk.js",
+    "static/media/gifight.gif": "/Shifumi/static/media/gifight.5865494422601b8982f1.gif",
+    "index.html": "/Shifumi/index.html",
+    "main.32e09e60.css.map": "/Shifumi/static/css/main.32e09e60.css.map",
+    "main.ba3b4729.js.map": "/Shifumi/static/js/main.ba3b4729.js.map",
+    "787.d03f1123.chunk.js.map": "/Shifumi/static/js/787.d03f1123.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.32e09e60.css",
+    "static/js/main.ba3b4729.js"
+  ]
+}

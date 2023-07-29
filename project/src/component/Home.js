@@ -14,11 +14,15 @@ export function Home() {
   const [continueState, setContinueState] = useState(false);
   let [playerScore, setPlayerScore] = useState(0);
   let [aiScore, setAiScore] = useState(0);
-  var audio = document.createElement("audio");
-  audio.setAttribute("src", "choose2.mp3");
+  
+  var audioChoose = document.createElement("audio");
+  audioChoose.setAttribute("src", "choose2.mp3");
 
-  var sound = document.createElement("audio");
-  sound.setAttribute("src", "fight.mp3");
+  var audioFight = document.createElement("audio");
+  audioFight.setAttribute("src", "fight.mp3");
+
+  var audioLoose = document.createElement("audio");
+  audioLoose.setAttribute("src", "hahaha.wav")
 
   const isMobile = isMobileScreen();
 
@@ -29,7 +33,7 @@ export function Home() {
   function chooseCardPlayer(index) {
     setCardSelect(index);
     setAiCardSelect(getRandomInt(3));
-    audio.play();
+    audioChoose.play();
   }
 
   async function startPlaying() {
@@ -37,10 +41,14 @@ export function Home() {
       setPlaying(true);
       getScore();
       setContinueState(true);
-      sound.play();
+      audioFight.play();
     } else {
       alert("Choisis ton champion");
     }
+  }
+
+  if(aiScore === 3) {
+    audioLoose.play();
   }
 
   function getScore() {

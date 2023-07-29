@@ -26,10 +26,10 @@ Start the project
 <img src="Fini.png" alt="Desktop Screenshot 3" width="800"/>
 
 Mobile Screens
-<div style="display: flex; border: 8px solid white;">
-    <img src="mobileHome.gif" alt="Mobile Screenshot 1" width="300"/>
-    <img src="Combatm.png" alt="Mobile Screenshot 2" width="300"/>
-    <img src="Finim.PNG" alt="Mobile Screenshot 3" width="300"/>
+<div style="display: flex;">
+    <img src="mobileHome.gif" alt="Mobile Screenshot 1" width="280"/>
+    <img src="Combatm.png" alt="Mobile Screenshot 2" width="280"/>
+    <img src="Finim.PNG" alt="Mobile Screenshot 3" width="280"/>
 </div>
 
 

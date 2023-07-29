@@ -24,12 +24,14 @@ Start the project
 <img src="Selection.png" alt="Desktop Screenshot 2" width="800"/>
 <img src="Combat.png" alt="Desktop Screenshot 3" width="800"/>
 <img src="Fini.png" alt="Desktop Screenshot 3" width="800"/>
-<!-- Add more screenshots if needed -->
+
 Mobile Screens
-<img src="mobileHome.gif" alt="Mobile Screenshot 1" width="300"/>
-<img src="Combatm.png" alt="Mobile Screenshot 2" width="300"/>
-<img src="Finim.PNG" alt="Mobile Screenshot 3" width="300"/>
-<!-- Add more screenshots if needed -->
+<div style="display: flex; gap: 10px;">
+    <img src="mobileHome.gif" alt="Mobile Screenshot 1" width="300"/>
+    <img src="Combatm.png" alt="Mobile Screenshot 2" width="300"/>
+    <img src="Finim.PNG" alt="Mobile Screenshot 3" width="300"/>
+</div>
+
 
 ## Author
 Gacem Ben Ayad

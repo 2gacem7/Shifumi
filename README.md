@@ -26,7 +26,7 @@ Start the project
 <img src="Fini.png" alt="Desktop Screenshot 3" width="800"/>
 
 Mobile Screens
-<div style="display: flex; gap: 24px;">
+<div style="display: flex; gap: 100px;">
     <img src="mobileHome.gif" alt="Mobile Screenshot 1" width="300" style="border: 8px solid white;" />
     <img src="Combatm.png" alt="Mobile Screenshot 2" width="300" style="border: 8px solid white;" />
     <img src="Finim.PNG" alt="Mobile Screenshot 3" width="300" style="border: 8px solid white;" />

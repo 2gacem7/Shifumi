@@ -26,9 +26,9 @@ Start the project
 <img src="Fini.png" alt="Desktop Screenshot 3" width="800"/>
 <!-- Add more screenshots if needed -->
 Mobile Screens
-<img src="mobileHome.gif" alt="Mobile Screenshot 1" width="800"/>
+<img src="mobileHome.gif" alt="Mobile Screenshot 1" width="300"/>
 <img src="Combatm.png" alt="Mobile Screenshot 2" width="300"/>
-<img src="Finim.png" alt="Mobile Screenshot 3" width="300"/>
+<img src="Finim.PNG" alt="Mobile Screenshot 3" width="300"/>
 <!-- Add more screenshots if needed -->
 
 ## Author

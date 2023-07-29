@@ -6,6 +6,10 @@ A Shifumi (Rock-Paper-Scissors) game built with ReactJs.
 
 Play the Shifumi game on various devices, as it is now fully responsive and adaptable to different screen sizes.
 
+### Playing Online
+
+You can play the game online at: [https://2gacem7.github.io/Shifumi/](https://2gacem7.github.io/Shifumi/)
+
 ### Installing
 
 Enter in the ./project folder.

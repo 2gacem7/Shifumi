@@ -8,7 +8,7 @@ Play the Shifumi game on various devices, as it is now fully responsive and adap
 
 ### Installing
 
-Enter in the ./ppc folder.
+Enter in the ./project folder.
 
 Installation
 

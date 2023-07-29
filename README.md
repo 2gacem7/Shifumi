@@ -1,11 +1,10 @@
 # Shifumi
 
-A shifumi game with ReactJs.
+A Shifumi (Rock-Paper-Scissors) game built with ReactJs.
 
 ## Getting Started
 
-It's not responsive, the ideal resolution to play is in desktop screen between 1200 x 800 and 1500 x 900. 
-
+Play the Shifumi game on various devices, as it is now fully responsive and adaptable to different screen sizes.
 
 ### Installing
 

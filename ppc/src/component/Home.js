@@ -2,7 +2,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import {Card } from './Card';
 import "./Home.css"
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 
 export function Home ()  {
     const name = "Humain";
@@ -19,6 +19,7 @@ export function Home ()  {
     var sound = document.createElement('audio');
     sound.setAttribute('src','fight.mp3');
 
+<<<<<<< HEAD
     function startPlaying() {
         if(cardSelect !== null) {
             setAiCardSelect(getRandomInt(3))
@@ -31,13 +32,31 @@ export function Home ()  {
         }
     }
 
+=======
+>>>>>>> 20ca7c1d1bf375a69c6322425fbc4538fb5b7233
     function getRandomInt(max) {
         return Math.floor(Math.random() * max)
     }
-
-    function getfight(index) {
+   
+    function chooseCardPlayer(index) {
         setCardSelect(index)
+<<<<<<< HEAD
         audio.play()
+=======
+        setAiCardSelect(getRandomInt(3))
+        audio.play();
+    }
+
+    async function startPlaying() {
+            if(cardSelect !== null && aiCardSelect !== null) {
+                setPlaying(true)
+                getScore()
+                setContinueState(true)
+                sound.play();
+            } else {
+                alert("Choisis ton champion")
+            }
+>>>>>>> 20ca7c1d1bf375a69c6322425fbc4538fb5b7233
     }
 
     function getScore () {
@@ -69,6 +88,7 @@ export function Home ()  {
 
     function ContinuePlaying() {
         setPlaying(false);
+        setCardSelect(null);
     }
 
     function stopPlaying() {
@@ -146,7 +166,7 @@ export function Home ()  {
                             {gameCard.map((e, index) => {
                                 return (
                                     <div key={index}>
-                                        <button className="cardAction" onClick={() => getfight(index)}>
+                                        <button className="cardAction" onClick={() => chooseCardPlayer(index)}>
                                             <div className="deckCard" style={{opacity: cardSelect === index && 1, marginBottom: cardSelect === index && 60}}>
                                                 <Card img={e.src} alt={e.alt}/>
                                             </div>

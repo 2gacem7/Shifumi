@@ -6,6 +6,9 @@ import scissors from "../assets/scissors.png"
 import rock from "../assets/rock.png"
 import paper from "../assets/paper.png"
 import ggwp from "../assets/ggwp.gif"
+import chooseAudio from "../assets/choose2.mp3";
+import fightAudio from "../assets/fight.mp3"
+import looseAudio from "../assets/hahaha.wav"
 import { useState } from "react";
 
 import isMobileScreen from "../isMobile";
@@ -20,13 +23,13 @@ export function Home() {
   let [aiScore, setAiScore] = useState(0);
   
   var audioChoose = document.createElement("audio");
-  audioChoose.setAttribute("src", "choose2.mp3");
+  audioChoose.setAttribute("src", chooseAudio);
 
   var audioFight = document.createElement("audio");
-  audioFight.setAttribute("src", "fight.mp3");
+  audioFight.setAttribute("src", fightAudio);
 
   var audioLoose = document.createElement("audio");
-  audioLoose.setAttribute("src", "hahaha.wav")
+  audioLoose.setAttribute("src", looseAudio)
 
   const isMobile = isMobileScreen();
 

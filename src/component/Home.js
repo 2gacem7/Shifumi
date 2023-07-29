@@ -2,6 +2,10 @@ import { Header } from "./Header";
 import { Footer } from "./Footer";
 import { Card } from "./Card";
 import "./Home.css";
+import scissors from "../assets/scissors.png"
+import rock from "../assets/rock.png"
+import paper from "../assets/paper.png"
+import ggwp from "../assets/ggwp.gif"
 import { useState } from "react";
 
 import isMobileScreen from "../isMobile";
@@ -94,15 +98,15 @@ export function Home() {
 
   const gameCard = [
     {
-      src: "scissors.png",
+      src: scissors,
       alt: "scissors",
     },
     {
-      src: "rock.png",
+      src: rock,
       alt: "rock",
     },
     {
-      src: "paper.png",
+      src: paper,
       alt: "paper",
     },
   ];
@@ -133,7 +137,7 @@ export function Home() {
                       justifyContent: "center",
                     }}
                   >
-                    <img src="ggwp.gif" alt="ggwp" height={150} width={105} />
+                    <img src={ggwp} alt="ggwp" height={150} width={105} />
                   </div>
                 </div>
               ) : (
@@ -157,12 +161,12 @@ export function Home() {
 
               <div className="buttonFight">
                 {aiScore === 3 || playerScore === 3 ? (
-                  <button className="button" onClick={stopPlaying}>
+                  <button className="buttonActionGame" onClick={stopPlaying}>
                     FINISH
                   </button>
                 ) : (
                   <div>
-                    <button className="button" onClick={ContinuePlaying}>
+                    <button className="buttonActionGame" onClick={ContinuePlaying}>
                       Continue
                     </button>
                   </div>
@@ -194,7 +198,7 @@ export function Home() {
                 })}
               </div>
               <div className="buttonFight">
-                <button className="button" onClick={startPlaying}>
+                <button className="buttonActionGame" onClick={startPlaying}>
                   FIGHT
                 </button>
               </div>

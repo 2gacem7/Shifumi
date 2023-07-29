@@ -32,14 +32,14 @@
   }
 }
 
-.button {
+.buttonActionGame {
   padding: 20px;
   cursor: pointer;
   font-family: "Tarrget", sans-serif;
   font-size: 24px;
 }
 
-.button:hover {
+.buttonActionGame:hover {
   background: #ff4655;
   background-position: right bottom;
   transition: all 0.5s ease-out;
@@ -107,7 +107,7 @@
   .cardAction:hover {
     opacity: 1;
   }
-  .button {
+  .buttonActionGame {
     padding: 16px;
     cursor: pointer;
     font-family: "Tarrget", sans-serif;

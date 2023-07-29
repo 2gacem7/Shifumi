@@ -1,51 +1,81 @@
-.header{
-    width: 100%;
-    height: 100px;
-    background-color:#ff4655;
-    display: flex;
-   
+.header {
+  width: 100%;
+  height: 100px;
+  background-color: #ff4655;
+  display: flex;
 }
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
 }
 .headerTitle {
-    font-family: 'Tarrget 3D';
-    margin:0;
-    color: aliceblue;
-    font-size: 48px;
+  font-family: "Tarrget 3D";
+  margin: 0;
+  color: aliceblue;
+  font-size: 48px;
 }
 .headerText {
-    font-family: 'Tarrget', sans-serif;
-    font-size: 24px;
+  font-family: "Tarrget", sans-serif;
+  font-size: 32px;
 }
 
 .rules {
-    position: absolute;
-    margin-left: 100px;
-    margin-top: 45px;
-    font-family: 'Tarrget', sans-serif;
-    font-size: 24px;
-    cursor: pointer;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 45px;
+  font-family: "Tarrget", sans-serif;
+  font-size: 24px;
+  cursor: pointer;
 }
 
 .rulesCard {
-    position: absolute;
-    font-family: 'TT Octas Trial', sans-serif;
-    font-size: 24px;
-    display: none;
-    width: 400px;
-    top:18%;
-    left: 35%;
-    z-index: 1;
-    background-color: black;
-    color:white;
-    padding: 10px;
-    border-radius: 10px;
+  position: absolute;
+  font-family: "TT Octas Trial", sans-serif;
+  font-size: 24px;
+  display: none;
+  width: 400px;
+  top: 20%; /* Vertically position the element at 50% from the top */
+  left: 50%; /* Horizontally position the element at 50% from the left */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the element both horizontally and vertically */
+  z-index: 1;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
 }
 
+@media (max-width: 767px) {
+  /* Adjust the styles for mobile here */
+  .rules {
+    /* Add your mobile styles here */
+    margin: 10px;
+    font-size: 16px;
+  }
+  .rulesCard {
+    width: 300px;
+    font-size: 16px;
+  }
+  .headerTitle {
+    font-family: "Tarrget 3D";
+    margin: 0;
+    color: aliceblue;
+    font-size: 32px;
+  }
+  .headerText {
+    font-family: "Tarrget", sans-serif;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+}
 .rules:hover + .rulesCard {
-    display: block;
+  display: block;
 }

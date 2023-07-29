@@ -1,8 +1,18 @@
 .deckCard {
-    cursor:pointer;
-    opacity: 0.7
+  cursor: pointer;
+  opacity: 0.7;
 }
 .deckCard:hover {
-    opacity:1;
-    margin-bottom: 60px
+  opacity: 1;
+  margin-top: -60px;
+}
+
+@media (max-width: 767px) {
+  .deckCard {
+    opacity: 0.5;
+  }
+  .deckCard:hover {
+    opacity: 1;
+    margin-top: 0;
+  }
 }

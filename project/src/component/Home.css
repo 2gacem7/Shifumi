@@ -1,65 +1,129 @@
+/* Styles for all screens */
 .ring {
-    height: 650px;
-    background-image:url("../../public/gifight.gif");
-    
-    display: flex;
-    justify-content: center;
+  min-height: 80vh; /* Use 100vh to make the element cover the entire viewport height */
+  background-image: url("../../public/gifight.gif");
+  background-size: cover; /* Scale the background image to cover the entire element */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  display: flex;
+  justify-content: center;
+}
+
+.ring-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
 }
 
 .namingContainer {
-   padding-top :100px;
+  padding-top: 100px;
 }
 
-.cardcontainer {
+@media (min-width: 768px) {
+  .card-container {
+    /* Adjust these styles based on your design requirements for larger screens */
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px;  
-}
-
-.buttonFight {
-    position:absolute;
-    top: 600px;
+    gap: 20px;
+    /* Add any other styles specific to screens larger than 767px here */
+  }
 }
 
 .button {
-    padding:20px;
-    cursor: pointer;
+  padding: 20px;
+  cursor: pointer;
+  font-family: "Tarrget", sans-serif;
+  font-size: 24px;
 }
+
 .button:hover {
-    background:#ff4655;
-    background-position: right bottom;
-    transition: all .5s ease-out;
+  background: #ff4655;
+  background-position: right bottom;
+  transition: all 0.5s ease-out;
+}
+
+.playing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.vstext {
+  font-family: "Tarrget", sans-serif;
+  font-size: 120px;
+  -webkit-text-stroke: 2px #ff4655;
+}
+
+.winner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.cardAction {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+.winnerText {
+  font-family: "Tarrget", sans-serif;
+  font-size: 120px;
+  color: #fff;
+}
+
+@media (max-width: 767px) {
+  .ring {
+    display: block;
+  }
+  .ring-container {
+    align-items: normal;
+    height: 80vh;
+  }
+  .card-container {
+    display: flex;
+    white-space: nowrap;
+    overflow-x: auto; /* Enable horizontal scrolling on mobile devices */
+    scrollbar-width: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+    -ms-overflow-style: none; /* Hide scrollbar for Internet Explorer and Edge */
+    /* Remove justify-content for mobile */
+    justify-content: initial;
+    gap: 16px;
+    padding: 0 16px;
   }
 
-  .cardAction {
-    background: none;
-	  color: inherit;
-	  border: none;
-	  padding: 0;
-	  font: inherit;
-	  cursor: pointer;
-	  outline: inherit;
+  .card-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
   }
 
   .cardAction:hover {
     opacity: 1;
   }
-
+  .button {
+    padding: 16px;
+    cursor: pointer;
+    font-family: "Tarrget", sans-serif;
+    font-size: 16px;
+  }
+  .vstext {
+    font-size: 48px;
+  }
   .playing {
-    display:flex;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 40px;
   }
-
-  .vstext {
-    font-family: 'Tarrget', sans-serif;
-    font-size: 120px;
-    -webkit-text-stroke: 2px #ff4655;
+  .winnerText {
+    font-size: 56px;
   }
-
-  .winner {
-    font-family: 'Tarrget', sans-serif;
-    font-size: 80px;
-  }
+}

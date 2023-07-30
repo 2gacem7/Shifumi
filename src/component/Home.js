@@ -9,6 +9,7 @@ import ggwp from "../assets/ggwp.gif"
 import chooseAudio from "../assets/choose2.mp3";
 import fightAudio from "../assets/fight.mp3"
 import looseAudio from "../assets/hahaha.wav"
+import swipe from "../assets/swipe.gif"
 import { useState } from "react";
 
 import isMobileScreen from "../isMobile";
@@ -200,6 +201,7 @@ export function Home() {
                   );
                 })}
               </div>
+              {isMobile && <div><img src={swipe} width="50" alt={swipe} ></img></div>}
               <div className="buttonFight">
                 <button className="buttonActionGame" onClick={startPlaying}>
                   FIGHT

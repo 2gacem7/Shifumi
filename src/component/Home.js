@@ -9,9 +9,9 @@ import ggwp from "../assets/ggwp.gif"
 import chooseAudio from "../assets/choose2.mp3";
 import fightAudio from "../assets/fight.mp3"
 import looseAudio from "../assets/hahaha.wav"
+import winAudio from "../assets/audioWin.wav"
 import swipe from "../assets/swipe.gif"
 import { useState } from "react";
-
 import isMobileScreen from "../isMobile";
 
 export function Home() {
@@ -30,7 +30,10 @@ export function Home() {
   audioFight.setAttribute("src", fightAudio);
 
   var audioLoose = document.createElement("audio");
-  audioLoose.setAttribute("src", looseAudio)
+  audioLoose.setAttribute("src", looseAudio);
+
+  var audioWin = document.createElement("audio");
+  audioWin.setAttribute("src", winAudio)
 
   const isMobile = isMobileScreen();
 
@@ -53,10 +56,6 @@ export function Home() {
     } else {
       alert("Choisis ton champion");
     }
-  }
-
-  if(aiScore === 3) {
-    audioLoose.play();
   }
 
   function getScore() {
@@ -98,6 +97,14 @@ export function Home() {
     setCardSelect(null);
     setAiCardSelect(null);
     setContinueState(false);
+  }
+
+  if(aiScore === 3) {
+    audioLoose.play();
+  }
+  
+  if(playerScore === 3) {
+    audioWin.play();
   }
 
   const gameCard = [

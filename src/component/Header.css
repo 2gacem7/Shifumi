@@ -34,7 +34,6 @@
   position: absolute;
   font-family: "TT Octas Trial", sans-serif;
   font-size: 24px;
-  display: none;
   width: 400px;
   top: 20%; /* Vertically position the element at 50% from the top */
   left: 50%; /* Horizontally position the element at 50% from the left */
@@ -76,6 +75,6 @@
     gap: 8px;
   }
 }
-.rules:hover + .rulesCard {
+/* .rules:hover + .rulesCard {
   display: block;
-}
+} */

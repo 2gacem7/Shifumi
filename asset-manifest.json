@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Shifumi/static/css/main.2a81c5d5.css",
-    "main.js": "/Shifumi/static/js/main.f3d55f8b.js",
+    "main.js": "/Shifumi/static/js/main.d679ba19.js",
     "static/js/787.d03f1123.chunk.js": "/Shifumi/static/js/787.d03f1123.chunk.js",
     "static/media/gifight.gif": "/Shifumi/static/media/gifight.5865494422601b8982f1.gif",
     "static/media/scissors.png": "/Shifumi/static/media/scissors.e36cf3a1ad09ec5432d7.png",
@@ -15,11 +15,11 @@
     "static/media/swipe.gif": "/Shifumi/static/media/swipe.5571fb71b82e5e1c6bfe.gif",
     "index.html": "/Shifumi/index.html",
     "main.2a81c5d5.css.map": "/Shifumi/static/css/main.2a81c5d5.css.map",
-    "main.f3d55f8b.js.map": "/Shifumi/static/js/main.f3d55f8b.js.map",
+    "main.d679ba19.js.map": "/Shifumi/static/js/main.d679ba19.js.map",
     "787.d03f1123.chunk.js.map": "/Shifumi/static/js/787.d03f1123.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a81c5d5.css",
-    "static/js/main.f3d55f8b.js"
+    "static/js/main.d679ba19.js"
   ]
 }

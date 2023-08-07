@@ -15,12 +15,20 @@
     justify-content: flex-end;
     align-items: center;
     width: 100%;
+    margin-bottom: 24px;
 }
 .footerText {
     font-family: 'TT Octas Trial', sans-serif;
-    font-size: 24px;
+    font-size: 32px;
     color: white;
     position: absolute;
+}
+
+@media (max-width: 767px) {
+    .footerText {
+        font-family: 'TT Octas Trial', sans-serif;
+        font-size: 24px;
+    }
 }
 span {
     text-decoration-line: line-through;
